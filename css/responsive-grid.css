@@ -1,0 +1,185 @@
+.flip-c-container {
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flip-c-row {
+    position: relative;
+    width: 100%;
+}
+
+.flip-c-row [class^="flip-c-col"] {
+    float: left;
+    margin: 0.5rem 2%;
+    min-height: 0.125rem;
+}
+
+.flip-c-col-1,
+.flip-c-col-2,
+.flip-c-col-3,
+.flip-c-col-4,
+.flip-c-col-5,
+.flip-c-col-6,
+.flip-c-col-7,
+.flip-c-col-8,
+.flip-c-col-9,
+.flip-c-col-10,
+.flip-c-col-11,
+.flip-c-col-12 {
+    width: 96%;
+}
+
+.flip-c-col-1-sm {
+    width: 4.33%;
+}
+
+.flip-c-col-2-sm {
+    width: 12.66%;
+}
+
+.flip-c-col-3-sm {
+    width: 21%;
+}
+
+.flip-c-col-4-sm {
+    width: 29.33%;
+}
+
+.flip-c-col-5-sm {
+    width: 37.66%;
+}
+
+.flip-c-col-6-sm {
+    width: 46%;
+}
+
+.flip-c-col-7-sm {
+    width: 54.33%;
+}
+
+.flip-c-col-8-sm {
+    width: 62.66%;
+}
+
+.flip-c-col-9-sm {
+    width: 71%;
+}
+
+.flip-c-col-10-sm {
+    width: 79.33%;
+}
+
+.flip-c-col-11-sm {
+    width: 87.66%;
+}
+
+.flip-c-col-12-sm {
+    width: 96%;
+}
+
+.flip-c-row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.hidden-sm {
+    display: none;
+}
+
+@media only screen and (min-width: 33.75em) {
+
+    /* 540px */
+    .flip-c-container {
+        width: 98%;
+    }
+}
+
+@media only screen and (min-width: 60em) {
+
+    /* was 45em */
+    /* 720px */
+    .flip-c-col-1,
+    .flip-c-col-2,
+    .flip-c-col-3,
+    .flip-c-col-4,
+    .flip-c-col-5,
+    .flip-c-col-6 {
+        width: 46%;
+    }
+
+    .flip-c-col-7,
+    .flip-c-col-8,
+    .flip-c-col-9,
+    .flip-c-col-10,
+    .flip-c-col-11,
+    .flip-c-col-12 {
+        width: 96%;
+    }
+
+    .hidden-sm {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 66em) {
+
+    /* was 60em */
+    /* 960px */
+    .flip-c-container {
+        width: 98%;
+    }
+
+    .flip-c-col-1 {
+        width: 4.33%;
+    }
+
+    .flip-c-col-2 {
+        width: 12.66%;
+    }
+
+    .flip-c-col-3 {
+        width: 21%;
+    }
+
+    .flip-c-col-4 {
+        width: 29.33%;
+    }
+
+    .flip-c-col-5 {
+        width: 37.66%;
+    }
+
+    .flip-c-col-6 {
+        width: 46%;
+    }
+
+    .flip-c-col-7 {
+        width: 54.33%;
+    }
+
+    .flip-c-col-8 {
+        width: 62.66%;
+    }
+
+    .flip-c-col-9 {
+        width: 71%;
+    }
+
+    .flip-c-col-10 {
+        width: 79.33%;
+    }
+
+    .flip-c-col-11 {
+        width: 87.66%;
+    }
+
+    .flip-c-col-12 {
+        width: 96%;
+    }
+
+    .hidden-sm {
+        display: block;
+    }
+}
