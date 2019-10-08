@@ -1,6 +1,6 @@
 {
     "name": "APEX Flip Cards",
-    "version": "1.0",
+    "version": "1.0.1",
     "description": "The plug-in draws some nice flip cards for APEX. Login for Demo is: user-demo / 123456@",
     "keywords": ["oracle", "apex", "plugin", "region", "responsive"],
     "homepage": "https://github.com/RonnyWeiss/APEX-Flip-Cards",

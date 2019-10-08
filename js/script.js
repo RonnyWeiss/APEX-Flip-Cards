@@ -1,6 +1,6 @@
 var apexFlipCards = (function () {
     "use strict";
-    var scriptVersion = "1.0";
+    var scriptVersion = "1.0.1";
     var util = {
         version: "1.0.5",
         isAPEX: function () {
@@ -187,7 +187,8 @@ var apexFlipCards = (function () {
 
             matFlipCardTitle.append(titleToggle);
 
-            var titleText = $("<h2></h2>");
+            var titleText = $("<div></div>");
+            titleText.addClass("mat-flip-card-title-text");
             if (pEscapeHTML !== false) {
                 titleText.text(data.TITLE);
             } else {
@@ -239,7 +240,6 @@ var apexFlipCards = (function () {
 
                 if ($(this).hasClass("show")) {
                     isShowing = true
-
                 }
 
                 if (parent.hasClass("showing")) {
@@ -251,7 +251,6 @@ var apexFlipCards = (function () {
                         var curImage = $(element).find(".mat-flip-card__image");
                         $(this).height(Math.floor(curCitle.height() + curImage.height()));
                     });
-
 
                     if (isShowing) {
                         parent.removeClass("showing");

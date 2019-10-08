@@ -34,6 +34,12 @@ div.mat-flip-card div.mat-flip-card-title {
     border-bottom-right-radius: 4px;
 }
 
+div.mat-flip-card div.mat-flip-card-title-text {
+    line-height: 1.5;
+    font-size: 2rem;
+    margin: 0 0 1.2rem;
+}
+
 div.mat-flip-card div.mat-flip-card-title h2 {
     text-overflow: ellipsis;
     white-space: nowrap;
