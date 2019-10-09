@@ -1,6 +1,6 @@
 var apexFlipCards = (function () {
     "use strict";
-    var scriptVersion = "1.0.1";
+    var scriptVersion = "1.0.2";
     var util = {
         version: "1.0.5",
         isAPEX: function () {
@@ -152,6 +152,7 @@ var apexFlipCards = (function () {
         var container = drawContainer(parent);
         var row = drawRow(container);
         var cardNum = 0;
+        var zindex = 10;
 
         $.each(pData, function (idx, data) {
             cardNum = cardNum + pConfigJSON.cardWidth;
@@ -232,7 +233,7 @@ var apexFlipCards = (function () {
             }
 
             /* add card flip */
-            var zindex = 10;
+
 
             matFlipCard.click(function (e) {
                 e.preventDefault();
@@ -240,6 +241,7 @@ var apexFlipCards = (function () {
 
                 if ($(this).hasClass("show")) {
                     isShowing = true
+
                 }
 
                 if (parent.hasClass("showing")) {
@@ -249,28 +251,25 @@ var apexFlipCards = (function () {
                     $.each(showElements, function (i, element) {
                         var curCitle = $(element).find(".mat-flip-card-title");
                         var curImage = $(element).find(".mat-flip-card__image");
-                        $(this).height(Math.floor(curCitle.height() + curImage.height()));
+                        // $(this).height(Math.floor(curCitle.height() + curImage.height()));
                     });
 
                     if (isShowing) {
                         parent.removeClass("showing");
+
                     } else {
-                        $(this).css({
-                            zIndex: zindex
-                        });
+                        $(this).css("z-index", zindex);
                         $(this).addClass("show");
-                        $(this).height(Math.floor(matFlipCardTitle.height() + matFlipCardImg.height() + matFlipCardFlap.height()));
+                        //   $(this).height(Math.floor(matFlipCardTitle.height() + matFlipCardImg.height() + matFlipCardFlap.height()));
                     }
 
                     zindex++;
 
                 } else {
                     parent.addClass("showing");
-                    $(this).css({
-                        zIndex: zindex
-                    });
+                    $(this).css("z-index", zindex);
                     $(this).addClass("show");
-                    $(this).height(Math.floor(matFlipCardTitle.height() + matFlipCardImg.height() + matFlipCardFlap.height()));
+                    // $(this).height(Math.floor(matFlipCardTitle.height() + matFlipCardImg.height() + matFlipCardFlap.height()));
 
                     zindex++;
                 }

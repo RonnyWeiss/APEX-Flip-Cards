@@ -5,7 +5,8 @@ div.mat-flip-cards {
 }
 
 div.mat-flip-card {
-    margin: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
     width: 100%;
     -webkit-perspective: 1000;
     perspective: 1000;
@@ -38,6 +39,10 @@ div.mat-flip-card div.mat-flip-card-title-text {
     line-height: 1.5;
     font-size: 2rem;
     margin: 0 0 1.2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 85%;
 }
 
 div.mat-flip-card div.mat-flip-card-title h2 {
@@ -110,9 +115,9 @@ div.mat-flip-card div.flap1 {
 
 div.mat-flip-cards.showing div.mat-flip-card {
     cursor: pointer;
-    opacity: 0.8;
-    -webkit-transform: scale(0.94);
-    transform: scale(0.94);
+    opacity: 0.7;
+    -webkit-transform: scale(0.88);
+    transform: scale(0.88);
 }
 
 .no-touch div.mat-flip-cards.showing div.mat-flip-card:hover {
