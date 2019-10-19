@@ -1,6 +1,6 @@
 var apexFlipCards = (function () {
     "use strict";
-    var scriptVersion = "1.0.2";
+    var scriptVersion = "1.0.3";
     var util = {
         version: "1.0.5",
         isAPEX: function () {
@@ -234,14 +234,12 @@ var apexFlipCards = (function () {
 
             /* add card flip */
 
-
             matFlipCard.click(function (e) {
                 e.preventDefault();
                 var isShowing = false;
 
                 if ($(this).hasClass("show")) {
                     isShowing = true
-
                 }
 
                 if (parent.hasClass("showing")) {
